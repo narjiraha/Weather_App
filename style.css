@@ -1,0 +1,81 @@
+body {
+    background-image: url("./9191622_26302.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* use full viewport height */
+    background-attachment: fixed; /* fix the background image to the viewport */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0; /* use margin shorthand for better readability */
+    max-width: 600px; /* add max-width for better responsiveness */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* add a semi-transparent white background */
+    border-radius: 10px; /* add a rounded border */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #2b2d42;
+    margin-bottom: 20px;
+    transition: border-bottom-color 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #2b2d42;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+  }
+  
+  input[type="text"]:focus {
+    border-bottom-color: #8d99ae;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0c8fe6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #47d60f;
+  }
+  
+
+  #temperature,
+  #humidity,
+  #wind-speed,
+  #weather-icon {
+    font-size: 48px; /* increase font size for better readability */
+    margin-bottom: 40px; /* add more space between weather data and other elements */
+    text-align: center;
+    color: #2b2d42;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      height: 100vh;
+    }
+  }
+  

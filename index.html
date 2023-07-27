@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form>
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name..."
+          autocomplete="off" />
+        <button type="button" onclick="getWeather()">Get Weather</button>
+      </form>
+      <div id="weather-info">
+        <div id="temperature"></div>
+        <div id="humidity"></div>
+        <div id="wind-speed"></div>
+        <div id="weather-icon"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
